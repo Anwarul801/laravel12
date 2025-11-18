@@ -1,4 +1,11 @@
 <?php
+/**
+ * @Author: Anwarul
+ * @Date: 2025-11-17 14:53:56
+ * @LastEditors: Anwarul
+ * @LastEditTime: 2025-11-18 12:01:54
+ * @Description: Innova IT
+ */
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,7 +22,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email', 191)->unique();
-            $table->string('phone', 50)->unique();
+            $table->string('phone', 50)->nullable();
             $table->string('user_type')->nullable();
             $table->string('role_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();

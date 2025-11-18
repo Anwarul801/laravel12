@@ -46,6 +46,30 @@ class PermissionSeeder extends Seeder
             array('name' => 'permissions.update','guard_name' => 'web'),
             array('name' => 'permissions.destroy','guard_name' => 'web'),
 
+            
+            array('name' => 'setting.index','guard_name' => 'web'),
+            array('name' => 'setting.edit','guard_name' => 'web'),
+            array('name' => 'setting.create','guard_name' => 'web'),
+            array('name' => 'setting.show','guard_name' => 'web'),
+            array('name' => 'setting.store','guard_name' => 'web'),
+            array('name' => 'setting.update','guard_name' => 'web'),
+            array('name' => 'setting.destroy','guard_name' => 'web'),
+
+            array('name' => 'division.index','guard_name' => 'web'),
+            array('name' => 'division.store','guard_name' => 'web'),
+            array('name' => 'division.update','guard_name' => 'web'),
+            array('name' => 'division.destroy','guard_name' => 'web'),
+
+            array('name' => 'district.index','guard_name' => 'web'),
+            array('name' => 'district.store','guard_name' => 'web'),
+            array('name' => 'district.update','guard_name' => 'web'),
+            array('name' => 'district.destroy','guard_name' => 'web'),
+
+            array('name' => 'thana.index','guard_name' => 'web'),
+            array('name' => 'thana.store','guard_name' => 'web'),
+            array('name' => 'thana.update','guard_name' => 'web'),
+            array('name' => 'thana.destroy','guard_name' => 'web'),
+
         );
 
         DB::table('permissions')->insert($permissions);

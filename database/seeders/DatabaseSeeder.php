@@ -1,4 +1,11 @@
 <?php
+/**
+ * @Author: Anwarul
+ * @Date: 2025-11-17 14:53:56
+ * @LastEditors: Anwarul
+ * @LastEditTime: 2025-11-18 11:51:25
+ * @Description: Innova IT
+ */
 
 namespace Database\Seeders;
 
@@ -16,6 +23,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
           PermissionSeeder::class,
           CreateAdminUserSeeder::class,
+          CountrySeeder::class,
+          DivisionSeeder::class,
+          DistrictSeeder::class,
+          ThanaSeeder::class,
        ]);
     }
 }
